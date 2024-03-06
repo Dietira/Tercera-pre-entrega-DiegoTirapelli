@@ -20,17 +20,17 @@ Para configurar y ejecutar el proyecto en tu entorno local, sigue estos pasos:
 
 1. Realiza las migraciones para configurar la base de datos:
 
-    python manage.py makemigrations 
+   `python manage.py makemigrations`
 
-    python manage.py migrate
+    `python manage.py migrate`
 
 2. Si lo deseas puedes crear un superusuario para acceder al panel de administración de Django:
 
-    python manage.py createsuperuser
+    `python manage.py createsuperuser`
 
 3. Inicia el servidor de desarrollo:
 
-    python manage.py runserver
+   `python manage.py runserver`
 
 ## URLs de la Aplicación
 Para acceder a las diferentes secciones de la aplicación, utiliza las siguientes URLs:
