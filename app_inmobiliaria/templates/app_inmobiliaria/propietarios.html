@@ -1,0 +1,23 @@
+{% extends "app_inmobiliaria/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+Seccion Propietarios
+{% endblock %}
+
+
+{% block descripcion %}
+Permite registrar un propietario
+{% endblock %}
+
+{% block formulario %}
+
+<form action ="" method="post"> {% csrf_token %}
+<table>
+    {{form2.as_table}}
+</table>
+<input type="submit" value="Registrar">
+</form>
+
+{% endblock %}

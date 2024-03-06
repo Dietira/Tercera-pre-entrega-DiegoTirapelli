@@ -1,0 +1,25 @@
+{% extends "app_inmobiliaria/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+Seccion Busqueda de propiedades
+{% endblock %}
+
+
+{% block descripcion %}
+Permite buscar una propiedad segun por tipo o por disponibilidad
+{% endblock %}
+
+{% block formulario %}
+
+<form method="POST">   {% csrf_token %}
+    {{ form5.as_p }}
+    <input type="submit" value="Buscar Propiedades">
+</form>
+
+{% for propiedad in propiedades %}
+    <p>{{ propiedad.tipo_propiedad }} -- {{ propiedad.direccion }}</p>
+{% endfor %}
+
+{% endblock %}
